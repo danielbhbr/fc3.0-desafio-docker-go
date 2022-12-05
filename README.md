@@ -11,8 +11,9 @@ O Dockerfile é organizado entre a criação de um runtime para o build do progr
 1. A imagem utilizada é ```FROM golang:latest as builder```
 2. O arquivo ```go.mod``` define os módulo e a versão que o programa GO utilizará
 3. A imagem de execução é ```FROM scratch``` que é uma imagem super otimizada para execução de binários [Imagem do Scratch](https://hub.docker.com/_/scratch)
-
-![Confirmação do tamanho da imagem](img/cmd-docker-images.png)
+![Confirmação do tamanho da imagem](img/cmd-docker-image-size.png)
+4. Abaixo é possível visualizar o resultado após execução do comando ```docker run danielbhbr/desafio-docker-go```
+![Resultado da execução do desafio](img/cmd-docker-result.png)
 
 # Endereço no Docker Hub
 
